@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+*,*:after,*:before{box-sizing: border-box;}
+
+
+.followAnimation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    will-change: transform;
+    font-size: 1.5rem;
+    display: block;
+    color: rgb(245, 8, 213);
+    z-index: 10;
+}
+
+.neon {width: 100%;
+    height: 40px;
+    background: rgb(43, 255, 36);}
+
+
+.neon p {width: 100%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 0.75rem;
+        font-family: 'cabi';}
+
+
+.front {width: 95%; height: 168px; margin: 0 auto; display: flex; justify-content: space-around; border-bottom: 1px solid #ccc;}
+
+
+.smenu {
+        line-height: 168px;}
+.smenu img {width: 30px;}
+.logo img {width: 500px; margin-top: 40px;}
+
+/* 햄버거 메뉴*/
+.ham {
+    
+    display: flex;
+    line-height: 168px;
+}
+.ham li {margin-right: 20px;}
+.ham img {width: 30px;}
+.ham img:hover {border: 4px solid rgb(43, 255, 36);}
+
+
+.menu {position: absolute;
+    top:207px;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    background: #fff;
+    border:1px solid #ccc;
+
+    /* left: -200px;  */
+
+    transition: all 0.5s;
+}
+
+    
+.menu ul {
+        margin-top: 30px;}
+.menu ul li a:hover {color: rgb(43, 255, 36);}
+.menu ul li a {text-decoration: none;
+                color: #000;
+                margin-top: 20px;}
+.catemenu {margin-top: 20px;}
+
+.close img {width: 30px;}
+/* 쇼핑 메뉴*/
+
+.shop img {width: 400px;}
+.shop ul {
+        width:100%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: repeat(4, 1fr);
+        margin-top: 100px;
+                        }
+
+.shop ul li span {display: block;
+                font-size: 0.9rem;
+                margin-top: 20px;
+                margin-bottom: 20px;}
+
+
+@media screen and (max-width:800px){
+        .menu {position: absolute;
+                top:207px;
+                width: 20%;
+                height: 100%;
+                text-align: center;
+                background: #fff;
+                border:1px solid #ccc;
+            
+                left: -200px; 
+            
+                transition: all 0.5s;
+            }
+
+
+        .shop img {width: 300px;}
+        .shop ul {
+                width:100%;
+                text-align: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr  ;
+                grid-template-rows: repeat(6, 1fr);
+                margin-top: 100px;
+                                }
+        
+        .shop ul li span {display: block;
+                        font-size: 0.9rem;
+                        margin-top: 20px;
+                        margin-bottom: 20px;}
+}
+
+
+
+@media screen and (max-width:640px){
+
+        .front {width: 95%; 
+                height: 167px; 
+                margin: 0 auto; 
+                display: flex; 
+                justify-content: space-around; 
+                border-bottom: 1px solid #ccc;}
+
+
+        .smenu {
+                line-height: 168px;}
+        .smenu img {width: 30px;}
+        .logo img {width: 300px; margin-top: 50px;}
+        
+        /* 햄버거 메뉴*/
+        .ham {
+            
+            display: flex;
+            line-height: 168px;
+        }
+        .ham li {margin-right: 20px;}
+        .ham img {width: 30px;}
+        .ham img:hover {border: 4px solid rgb(43, 255, 36);}
+        
+        
+        .menu {position: absolute;
+            top:207px;
+            width: 30%;
+            height: 100%;
+            text-align: center;
+            background: #fff;
+            border:1px solid #ccc;
+        
+            left: -200px; 
+        
+            transition: all 0.5s;
+        }
+        
+            
+        .menu ul {
+                margin-top: 30px;}
+        .menu ul li a:hover {color: rgb(43, 255, 36);}
+        .menu ul li a {text-decoration: none;
+                        color: #000;
+                        margin-top: 20px;}
+        .catemenu {margin-top: 20px;}
+        
+        .close img {width: 30px;}
+
+
+        .menu {position: absolute;
+                top:207px;
+                width: 20%;
+                height: 100%;
+                text-align: center;
+                background: #fff;
+                border:1px solid #ccc;
+            
+                left: -200px; 
+            
+                transition: all 0.5s;
+            }
+
+
+        .shop img {width: 350px;}
+        .shop ul {
+                width:100%;
+                text-align: center;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(10, 1fr);
+                margin-top: 100px;
+                                }
+        
+        .shop ul li span {display: block;
+                        font-size: 0.9rem;
+                        margin-top: 20px;
+                        margin-bottom: 20px;}
+}
